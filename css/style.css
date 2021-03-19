@@ -6,31 +6,39 @@
 }
 
 body {
-    width: 80%;
+    width: 70%;
     font-family: 'Montserrat', sans-serif;
 }
 
-body * {
-    margin-top: 10px;
+.section,
+footer {
+    margin-top: 40px;
 }
+
 
 /* header */
 #logo {
-    width: 10%;
-    border-right: 1px solid #D8C4C4;
-    padding-right: 10px;
-    margin-top: 0;
+    width: 14%;
+    border-right: 1px solid lightgrey;
+    padding-right: 30px;
+}
+nav {
+    margin-top: 26px;
 }
 nav ul li {
     display: inline-block;
-    color: #D8C4C4;
+    color: #A49595;
+    font-weight:500;
+    font-size: 16px;
+    padding-right: 10px;
 }
-
 
 
 /* sections */
 .first {
-    height: 400px;
+    height: 80vh;
+    background-image: url(../img/banner.jpg);
+    background-size:cover;
     background-color: #E1D67A;
 }
 
