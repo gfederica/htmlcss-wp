@@ -33,6 +33,10 @@ nav ul li {
     font-size: 16px;
     padding-right: 10px;
 }
+nav ul li:hover {
+    color: #6C6262;
+    cursor: pointer;
+}
 
 
 /* first banner */
