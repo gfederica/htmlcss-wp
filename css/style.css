@@ -61,11 +61,13 @@ nav ul li {
     font-size: 16px;
 }
 
-.second {
-    margin-top: 50px;
-}
 
 /* second banner */
+.second {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
 .top {
     height: 80px;
 }
@@ -82,28 +84,62 @@ nav ul li {
 
 .middle {
     float: left;
-    width: 62%;
-    background-color: #ABCFE7;
-    margin: 1% 1%;
+    width: 60%;
+    margin: 1% 2%;
 }
 
 .left, .right {
     float: left;
     width: 18%;
-    background-color: #ABCFE7;
     margin-top: 1%;
-
 }
 
 .left, .right, .middle {
     height: 60vh;
 }
 
-.sidepic img,
-.middlepic img
- {
-    width: 100%;
-    object-fit: contain;
+
+ /* pictures */
+.leftpic {
+    background-image: url(../img/img-1.jpg);
+    background-size:cover;
+}
+
+.middlepic {
+    background-image: url(../img/banner-2.jpg);
+    background-size:90%;
+    background-position: center;
+
+}
+.rightpic {
+    background-image: url(../img/img-3.jpg);
+    background-size:cover;
+    background-position: center;
+
+}
+
+
+.leftpic,
+.middlepic,
+.rightpic {
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: overlay;
+    border-radius: 10px;
+}
+
+
+/* paragraphs */
+.top-paragraph {
+    padding-top: 20px;
+    color: #6C6262;
+    font-weight: 500;
+}
+
+.paragraph {
+    padding-top: 10px;
+    font-size: 16px;
+    color: #A49595;
 }
 
 
@@ -118,5 +154,11 @@ nav ul li {
 /* footer */
 footer {
     height: 50px;
-    background-color: #8801FE;
+    text-align: center;
+    color: #6C6262;
+    font-size: 16px;
+    font-weight: 500;
+}
+.fa-heart {
+    color: red;
 }
