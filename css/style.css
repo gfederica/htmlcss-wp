@@ -26,6 +26,7 @@ nav {
     margin-top: 26px;
 }
 nav ul li {
+    list-style-type: none;
     display: inline-block;
     color: #A49595;
     font-weight:500;
@@ -34,34 +35,54 @@ nav ul li {
 }
 
 
-/* sections */
+/* first banner */
 .first {
     height: 80vh;
     background-image: url(../img/banner.jpg);
     background-size:cover;
-    background-color: #E1D67A;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+    border-radius: 10px;
+}
+.banner-1 {
+    width: 50%;
+    padding-top: 420px;
+    margin-left: 30px;
+}
+
+.banner-1 p:first-of-type {
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.banner-1 p:last-of-type {
+    padding-top: 5px;
+    font-size: 16px;
 }
 
 .second {
-    background-color: #0186FF;
+    margin-top: 50px;
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* second banner */
 .top {
     height: 80px;
-    background-color: #ABCFE7;
 }
 
+.top p:first-of-type {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.top p:last-of-type {
+    font-size: 16px;
+    color: #A49595;
+}
 
 .middle {
     float: left;
     width: 62%;
-    /* height: 508px; */
     background-color: #ABCFE7;
     margin: 1% 1%;
 }
@@ -69,11 +90,30 @@ nav ul li {
 .left, .right {
     float: left;
     width: 18%;
-    /* height: 508px; */
     background-color: #ABCFE7;
     margin-top: 1%;
 
 }
+
+.left, .right, .middle {
+    height: 60vh;
+}
+
+.sidepic img,
+.middlepic img
+ {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* footer */
 footer {
